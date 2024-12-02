@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Open Instagram and then redirect back after 2 seconds
+        window.onload = function () {
+            // Open Instagram in the same tab
+            window.location.href = "https://www.instagram.com";
+
+            // After 2 seconds, redirect to slide.html
+            setTimeout(() => {
+                window.location.href = "slide.html";
+            }, 2000);
+        };
+    </script>
+</head>
+<body>
+    <h1>Redirecting to Instagram...</h1>
+</body>
+</html>

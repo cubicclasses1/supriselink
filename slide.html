@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cubic Classes - Revision Batch</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    /* Header */
+.site-header {
+  background-color: #2c3e50;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.site-header h1 {
+  font-size: 36px;
+  margin: 0; /* Reduced the margin to avoid extra space */
+}
+
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-top: -30px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    /* Cloud Box */
+    .cloud-box {
+      background: #fff;
+      display: inline-block;
+      padding: 30px 50px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .cloud-box::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .cloud-box h3 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .cloud-box p {
+      font-size: 20px;
+      color: #7f8c8d;
+    }
+
+    /* Batch Items */
+    .batch-details {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .batch-item {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 45%;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .batch-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .batch-item h3 {
+      font-size: 24px;
+      color: #2c3e50;
+    }
+
+    .batch-item p {
+      font-size: 20px;
+      color: #7f8c8d;
+    }
+
+    /* Call to Action Button */
+    .cta-button {
+      background-color: #e74c3c;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #c0392b;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: #34495e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .site-footer p {
+      margin: 5px 0;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      /* Adjust logo size */
+      .site-header .logo {
+        width: 40px;
+      }
+
+      .site-header h1 {
+        font-size: 28px;
+        margin-left: 10px;
+      }
+
+      /* Hero Section */
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      /* Cloud Box */
+      .cloud-box {
+        padding: 20px 30px;
+        margin-bottom: 30px;
+      }
+
+      .cloud-box h3 {
+        font-size: 24px;
+      }
+
+      .cloud-box p {
+        font-size: 18px;
+      }
+
+      /* Batch Items */
+      .batch-item {
+        width: 90%; /* Take full width on small screens */
+        margin-bottom: 20px;
+      }
+
+      /* Call to Action Button */
+      .cta-button {
+        font-size: 18px;
+        padding: 12px 25px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Adjust Hero Section for smaller screens */
+      .hero h2 {
+        font-size: 22px;
+      }
+
+      /* Cloud Box */
+      .cloud-box h3 {
+        font-size: 20px;
+      }
+
+      .cloud-box p {
+        font-size: 16px;
+      }
+
+      /* Batch Items */
+      .batch-item h3 {
+        font-size: 20px;
+      }
+
+      .batch-item p {
+        font-size: 16px;
+      }
+
+      /* Call to Action Button */
+      .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <h1>The Cubic Classes</h1>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Revision Batch for Class 12th & 10th Students</h2>
+      <div class="cloud-box">
+        <h3>Join Us and Boost Your Confidence with Expert Guidance!</h3>
+        <p>Get the right support for your board exams. We focus on strengthening concepts and improving problem-solving skills.</p>
+      </div>
+      <div class="batch-details">
+        <div class="batch-item">
+          <h3>📚 Mathematics Class 12th</h3>
+          <p>Starting From: <strong>December 14th</strong></p>
+        </div>
+        <div class="batch-item">
+          <h3>📐 Mathematics Class 10th</h3>
+          <p>Starting From: <strong>December 15th</strong></p>
+        </div>
+      </div>
+      <a href="thank-you.html" class="cta-button">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>📍 Address: First Floor, PNB Bank, Near Shri Guru Ram Rai School, Jagjeetpur</p>
+      <p>📞 Contact us: 9720244595</p>
+    </div>
+  </footer>
+</body>
+</html>

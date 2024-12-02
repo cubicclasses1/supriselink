@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    overflow: hidden;
+  }
+  
+  /* Background Animation */
+  .background {
+    background: linear-gradient(135deg, #ff7b7b, #ffb84d, #ffcc99);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Content Styling */
+  .content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .question {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #4a90e2;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e55b50;
+  }
+  
+  /* Message Box for Surprise */
+  .message-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    display: none;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Motivational Message Box */
+  .motivational-box {
+    margin-top: 20px;
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
+    animation: fadeIn 2s ease;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  #continue-btn {
+    margin-top: 15px;
+  }
+  
+  

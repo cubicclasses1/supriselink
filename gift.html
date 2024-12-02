@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Gift</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div class="gift-section">
+    <h1>Here's a motivational gift for you! 🎁</h1>
+    <p id="quote"></p>
+    <button id="next-btn">Continue</button>
+  </div>
+  <script>
+    const quotes = [
+  "Believe in yourself and all that you are.",
+  "Success is no accident.",
+  "Don’t stop until you’re proud.",
+  "You are capable of amazing things.",
+  "Dream it. Wish it. Do it.",
+  "Great things never come from comfort zones.",
+];
+
+document.getElementById("quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+
+document.getElementById("next-btn").addEventListener("click", () => {
+  window.location.href = "slide.html";
+});
+
+  </script>
+</body>
+</html>
