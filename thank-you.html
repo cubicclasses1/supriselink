@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You</title>
-  <style>/* General Styles */
+  <style>
+    /* General Styles */
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -73,7 +74,7 @@
         font-size: 16px;
       }
     }
-    </style>
+  </style>
 </head>
 <body>
   <div class="thank-you">
@@ -88,5 +89,12 @@
       <p>We truly appreciate your time. Hope to see you in our revision batch soon! 😊</p>
     </div>
   </div>
+
+  <script>
+    // Redirect back to the previous page after 3 seconds
+    setTimeout(() => {
+      window.history.back(); // Go back to the previous page in history
+    }, 3000); // 3 seconds delay
+  </script>
 </body>
 </html>
